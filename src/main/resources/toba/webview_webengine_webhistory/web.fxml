@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.web.WebView?>
+
+<?import javafx.scene.control.TextField?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toba.webview_webengine_webhistory.Controller">
+   <children>
+      <WebView fx:id="webView" layoutX="-6.0" layoutY="43.0" prefHeight="560.0" prefWidth="806.0" />
+      <HBox layoutX="-1.0" prefHeight="43.0" prefWidth="767.0">
+         <children>
+            <Hyperlink fx:id="hlBackward" onAction="#handleBackward" text="Backward" />
+            <Hyperlink fx:id="hlForward" onAction="#handleForward" text="Forward" />
+            <Hyperlink fx:id="hlReload" onAction="#handleReload" text="Reload" />
+            <Hyperlink fx:id="hlHome" onAction="#handleHome" text="Home" />
+            <TextField fx:id="tfSearch" prefHeight="25.0" prefWidth="282.0" />
+            <Hyperlink fx:id="hlSearch" onAction="#handleSearch" text="Search" />
+            <Hyperlink fx:id="hlZoomIn" onAction="#handleZoomIn" text="Zoom In" />
+            <Hyperlink fx:id="hlZoomOut" onAction="#handleZoomOut" text="Zoom Out" />
+            <Hyperlink fx:id="hlFontPlus" onAction="#handleFontPlus" text="Font +" />
+            <Hyperlink fx:id="hlFontMinus" onAction="#handleFontMinus" text="Font -" />
+            <Hyperlink fx:id="hlAbout" onAction="#handleAbout" text="About" />
+         </children>
+      </HBox>
+   </children>
+   <Hyperlink fx:id="hlYouTube" layoutX="48.0" layoutY="472.0" onAction="#handleYouTube" text="YouTube" />
+</AnchorPane>
